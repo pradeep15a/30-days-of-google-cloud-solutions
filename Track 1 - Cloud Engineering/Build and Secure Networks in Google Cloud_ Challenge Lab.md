@@ -9,7 +9,7 @@ gcloud compute firewall-rules delete open-access
 
 - **Go to Compute Engine and start Bastion instance**
 
-## Task 3 : Create a firewall rule that allows SSH (tcp/22) from the IAP service and add network tag on 
+## Task 3 : Create a firewall rule that allows SSH (tcp/22) from the IAP service and add network tag on bastion
 ```bash
 gcloud compute firewall-rules create ssh-ingress --allow=tcp:22 --source-ranges 35.235.240.0/20 --target-tags ssh-ingress --network acme-vpc
 
