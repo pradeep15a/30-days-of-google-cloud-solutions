@@ -23,7 +23,6 @@ kubectl create deployment hello-server \
 kubectl expose deployment hello-server \
           --type=LoadBalancer \
           --port 8080
-kubectl get services
 ```
 
 ## Task 3 : Create the web server frontend
